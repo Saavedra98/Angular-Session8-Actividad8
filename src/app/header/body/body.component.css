@@ -3,6 +3,10 @@
     width: 50%;
 }
 
+.card{
+    box-shadow: 1px 1px 8px 2px gray;
+}
+
 .card-header{
     font-size: 30px;
     font-weight: 800;

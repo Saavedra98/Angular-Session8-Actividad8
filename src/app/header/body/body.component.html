@@ -33,11 +33,14 @@
                 <td>{{nom[0]}}</td>
                 <td>{{nom[1]}}</td>
                 <td>{{nom[2]}}</td>
-                <td >{{nom[0]}}</td>
+                <td  *ngIf=" condicion(nom[2]); then mayor else menor" ></td>
+                
+                <ng-template #mayor > <td class="text-success"> {{nom[0]}} es mayor de edad </td> </ng-template>
+                <ng-template   #menor > <td class="text-danger">{{nom[0]}} Es menor de edad </td></ng-template>
+
               </tr>
 
-              <!-- <ng-template #mayor >Es mayor de edad</ng-template>
-              <ng-template #menor >Es menor de edad</ng-template> -->
+              
               
             </tbody>
           </table>
