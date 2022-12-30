@@ -29,10 +29,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>15</td>
+              <tr *ngFor="let nom of personas">
+                <td>{{nom[0]}}</td>
+                <td>{{nom[1]}}</td>
+                <td>{{nom[2]}}</td>
                 <td>Es menor</td>
               </tr>
               

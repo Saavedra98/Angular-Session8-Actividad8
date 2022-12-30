@@ -13,6 +13,8 @@ export class BodyComponent {
 
   registrar(nombreInput: String, apellidoInput:String, edadInput: String ){
 
+    this.personas.push([String(nombreInput), String(apellidoInput), String(edadInput)]);
+
   }
 
 }
